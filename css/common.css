@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+  font-size: 62.5%; /* 16px * 62.5% = 10px */
+  width: 100%;
+  box-sizing: border-box;
+}
+body {
+  color: #333;
+  font-family: "Arial";
+  font-weight: 400;
+  font-size: 1.6rem;/* デフォルトフォントサイズ */
+  line-height: 1;
+  text-align: center;
+}
+/* font-wightは 
+400(Regular)
+500(medium)
+700(Bold)
+900(Black)
+の４種類 style.cssで書き換えてください。
+*/
+
+a {
+	color: #333;
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+
+
+img {
+  width: 100%;
+  height: auto;
+	vertical-align: bottom;
+	margin-top: -1px;
+  border-style: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, div{
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  font-weight: normal;
+}
+
+

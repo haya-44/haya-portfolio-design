@@ -1,0 +1,23 @@
+.wave{
+  position:relative;
+  height:600px;/*何も表示されない場合は各波の親要素に高さを持たせましょう。*/
+  }
+  canvas{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    .wave{
+      position:relative;
+      height:350px;/*何も表示されない場合は各波の親要素に高さを持たせましょう。*/
+      }
+      canvas{
+      position: absolute;
+      bottom: 0;
+      left:0;
+      width: 100%;
+      }
+  }
