@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  
+  <meta name="description" content="HAYATO SAITOのポートフォリオサイトです。">
+  <title>HAYATO SAITO | ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+<!-- Unna -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unna&display=swap" rel="stylesheet">
+<!-- Unna -->
+
+  <!-- <link rel="stylesheet" type="text/css" href="css/5-1-7.css"> -->
+
+  <script>
+    $(function () {
+      // #で始まるリンクをクリックしたら実行されます
+      $('a[href^="#"]').click(function () {
+        // スクロールの速度
+        let speed = 400; // ミリ秒で記述
+        let href = $(this).attr("href");
+        let target = $(href == "#" || href == "" ? 'html' : href);
+        let position = target.offset().top;
+        $('body,html').animate({ scrollTop: position }, speed, 'swing');
+        return false;
+      });
+    });
+  </script>
+
+  <link rel="shortcut icon" href="img/.ico" />
+
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" /><!-- 自作 -->
+  <link href="css/common.css" rel="stylesheet" type="text/css"/>
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" /><!-- 自作 -->
+  <link rel="stylesheet" href="css/animation.css" type="text/css"/>
+  
+
+
+  <!--==============レイアウトを制御する独自のCSSを読み込み 5-1-7　ハンバーガー===============-->
+<link rel="stylesheet" type="text/css" href="css/5-1-7.css">
+  <!--==============レイアウトを制御する独自のCSSを読み込み 5-1-7　ハンバーガー===============-->
+
+
+<link rel="stylesheet" type="text/css" href="css/5-15.css"><!-- 波線 5-15 -->
+
+<!-- スライド -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" type="text/css" href="css/6-1-6.css">
+<!-- スライド -->
+</head>
+
+
+
+<body>
+
+
+<main></main>
+  <!---------header----------->
+ 
+    <header id="header">
+      <a class="logo" href="index.html"><img src="img/icon/hs-logo.png"></a>
+      <nav id="g-navi">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="works-area.html">BANNER</a></li>
+          <li><a href="#works">WORKS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="openbtn"><span></span><span></span><span></span></div>
+  
+  <!---------header----------->
+
+      
+
+  
+  <!-- main-visual -->
+      <div class="main-visual animation">
+        <h1><span>H</span>AYATO&nbsp;<span>S</span>AITOU</h1>
+        <p>Graphic & Web Designer</p>
+      </div>
+  <!-- main-visual -->
+
+
+
+      <!-- 波線 -->
+      <div class="wave">
+        <canvas id="waveCanvas"></canvas>
+      </div>
+      <!-- 波線 -->
+
+
+
+
+
+        <!-- ABOUT -->
+          <section  id="about" class="about__inner">
+
+              <div class="about-grid__flex slow-animation">
+                  <div class="about-image__item">
+                    <img src="img/profile-24.jpg" alt="斎藤駿斗プロフィール画像">
+                  </div>
+    
+                  <div class="about-text__item">
+                    <div class="about-title">ABOUT</div>
+                      <div class="about-name">斎藤&nbsp;駿斗</div>
+                        <p class="">デザインスクールにて一年間Web・DTPデザインについて学んだ後、
+                          Web広告、DTP広告の運用を行う都内広告代理店に入社。同社での業務内容は、印刷媒体を中心にデザインを担当。
+                          バナー・チラシ・パンフレット等の制作を経験。退職後デジタルハリウッドスクールにて学習しながらチームでweb制作等をしております。
+                        </p>
+                  </div>
+              </div>
+
+          </section>
+        <!-- ABOUT -->
+
+
+
+
+
+        <!-- banner -->
+      <section class="topic__inner">
+        <h2 class="title">BANNER</h2>
+        <ul class="slider slow-animation">
+          
+          <li class="slick-image">
+            <a href="works-.html"><img src="img/banner/digital-hollywood_1.jpg" alt="" />
+            <div class="mask">
+              <div class="caption">デジタルハリウッド コース一覧バナー</div>
+              <p class="caption">デジタルハリウッドホームページ</p>
+            </div>
+            </a>
+          </li>
+
+          <li class="slick-image">
+            <a id="topics" href="works-.html"><img src="img/banner/fa_zeron1_1.jpg" alt="" />
+            <div class="mask">
+              <div class="caption">ゼロン「パチンコ求人広告」</div>
+              <p class="caption">FromA-Navi</p>
+            </div>
+            </a>
+          </li>
+
+
+          <li class="slick-image">
+            <a id="topics" href="works-.html"><img src="img/banner/fa_miya1_1.jpg" alt="" />
+            <div class="mask">
+              <div class="caption">ステーキ宮「ファミレス求人広告」</div>
+              <p class="caption">FromA-Navi</p>
+            </div>
+            </a>
+          </li>
+          <li class="slick-image">
+            <a href="works-.html"><img src="img/banner/digital-hollywood_1.jpg" alt="" />
+            <div class="mask">
+              <div class="caption">デジタルハリウッド コース一覧バナー</div>
+              <p class="caption">デジタルハリウッドホームページ</p>
+            </div>
+            </a>
+          </li>
+
+          <li class="slick-image">
+            <a id="topics" href="works-.html"><img src="img/banner/fa_zeron1_1.jpg" alt="" />
+            <div class="mask">
+              <div class="caption">ゼロン「パチンコ求人広告」</div>
+              <p class="caption">FromA-Navi</p>
+            </div>
+            </a>
+          </li>
+
+
+          <li class="slick-image">
+            <a id="topics" href="works-.html"><img src="img/banner/fa_miya1_1.jpg" alt="" />
+            <div class="mask">
+              <div class="caption">ステーキ宮「ファミレス求人広告」</div>
+              <p class="caption">FromA-Navi</p>
+            </div>
+            </a>
+          </li>
+
+        </ul>
+
+        
+        <a href="works-area.html">
+          <button class="btn slide-bg"><span></span>more</button>
+        </a>
+      </section>
+      <!-- banner -->
+
+
+
+
+
+
+
+
+      <!-- works -->
+
+        
+        <section id="works" class="works-inner">
+          <h2 class="title">WORKS</h2>
+
+          <div class="works-list slow-animation">
+
+            <a class="works-item" href="works-afuredasu.html">
+              <p class="works-img"><img src="img/afuredasu/afuredasu.jpg" alt="" /></p>
+              <p class="works-name">短編映画「溢れ出すこの感情を」</p>
+              <p class="works-info">一部デザイン / 一部コーディング</p>
+            </a>
+
+            <a class="works-item" href="works-smartmatching.html">
+              <p class="works-img"><img src="img/smartmatching/smartmatching.jpg" alt="" /></p>
+              <p class="works-name">愛媛県IT人材スマートマッチング</p>
+              <p class="works-info">一部コーディング</p>
+            </a>
+
+            <a class="works-item" href="works-hirado.html">
+              <p class="works-img"><img src="img/hirado/hirado.jpg" alt="" /></p>
+              <p class="works-name">平戸観光協会</p>
+              <p class="works-info">一部コーディング</p>
+            </a>
+
+            <a class="works-item" href="works-cafecamp.html">
+              <p class="works-img"><img src="img/cafecamp/cafecamp.jpg" alt="" /></p>
+              <p class="works-name">CafeCamp</p>
+              <p class="works-info">デザイン / コーディング</p>
+            </a>
+
+            <a class="works-item" href="works-portfolio.html">
+              <p class="works-img"><img src="img/portfolio/portfolio.jpg" alt="" /></p>
+              <p class="works-name">portfolio</p>
+              <p class="works-info">デザイン / コーディング</p>
+            </a>
+
+            <a class="works-item" href="works-caldo.html">
+              <p class="works-img"><img src="img/dtp/caldo-1.jpg" alt="" /></p>
+              <p class="works-name">CALDO</p>
+              <p class="works-info">デザイン / フライヤー</p>
+            </a>
+
+            <a class="works-item" href="works-haenall.html">
+              <p class="works-img"><img src="img/dtp/haenall.jpg" alt="" /></p>
+              <p class="works-name">ハエンオール</p>
+              <p class="works-info">デザイン / パンフレット</p>
+            </a>
+
+
+          </div>
+
+      </section>
+  
+  
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;HAYATO SAITO</div>
+    </footer>
+    <!-- /footer -->
+
+  
+
+
+
+<!-- ボタン -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="js/5-1-7.js"></script>
+<!-- ボタン -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
+
+
+  <script type='text/javascript' src="js/5-15.js"></script>
+
+
+
+<!-- スライド -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/6-1-6.js"></script>
+<!-- スライド -->
+
+</body>
+</html>
